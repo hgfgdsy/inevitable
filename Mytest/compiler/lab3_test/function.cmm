@@ -1,0 +1,54 @@
+int partition(int p[10],int low,int up)
+{
+	int pivot,i,j,temp;
+	pivot=p[up];
+	i=low-1;
+	j=low;
+	while (j<up)
+	{
+		if (p[j]<=pivot)
+		{
+			i=i+1;
+			temp=p[i];
+			p[i]=p[j];
+			p[j]=temp;
+		}
+		j=j+1;
+	}
+	temp=p[i+1];
+	p[i+1]=p[up];
+	p[up]=temp;
+	return i+1;
+}
+
+int sort(int a[10],int l,int r)
+{
+	int mid;
+	if (l<r)
+	{
+		mid=partition(a,l,r);
+		sort(a,l,mid-1);
+		sort(a,mid+1,r);
+	}
+	return 0;
+}
+
+int main()
+{
+	int arr[10];
+	int t;
+	t=0;
+	while (t<10)
+	{
+		arr[t]=read();
+		t=t+1;
+	}
+	sort(arr,0,9);
+	t=0;
+	while (t<10)
+	{
+		write(arr[t]);
+		t=t+1;
+	}
+	return 0;
+}

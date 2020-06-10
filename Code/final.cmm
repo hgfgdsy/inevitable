@@ -1,0 +1,17 @@
+int fact(int n)
+{
+	return n;
+}
+
+int main()
+{
+	int a, b, c;
+	int d[10];
+	a = 1;
+	b = a*a + 1;
+	c = b;
+	c = fact(b);
+	c = read();
+	write(c*c - 111);
+	return a;
+}

@@ -1,0 +1,11 @@
+int f(int a1,int a2, int a3)
+{
+	return a3;
+}
+
+int main()
+{
+	int i;
+	i=f(1,2,3);
+	return 0;
+}

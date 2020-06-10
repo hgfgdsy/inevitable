@@ -1,0 +1,53 @@
+struct s
+{
+	int a;
+	int b[10];
+	int c;
+};
+
+int addArray(int a1[10],int a2[10])
+{
+	int t;
+	t=0;
+	while (t<10)
+	{
+		a1[t]=a1[t]+a2[t];
+		t=t+1;
+	}
+	return 0;
+}
+
+int add(struct s s1,struct s s2)
+{
+	s1.a=s1.a+s2.a;
+	addArray(s1.b,s2.b);
+	s1.c=s1.c+s2.c;
+	return 0;
+}
+
+int main()
+{
+	struct s m,n;
+	int i;
+	m.a=1000;
+	n.a=2000;
+	i=0;
+	while (i<10)
+	{
+		m.b[i]=100+i;
+		n.b[i]=200-i;
+		i=i+1;
+	}
+	m.c=-500;
+	n.c=-200;
+	add(m,n);
+	write(m.a);
+	i=0;
+	while (i<10)
+	{
+		write(m.b[i]);
+		i=i+1;
+	}
+	write(m.c);
+	return 0;
+}

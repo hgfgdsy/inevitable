@@ -1,0 +1,130 @@
+FUNCTION Josepy :
+PARAM n
+PARAM m
+t1 := #1
+i := t1
+DEC people 400
+t2 := #0
+j := t2
+t3 := #0
+k := t3
+t4 := #0
+num := t4
+LABEL label1 :
+t5 := i
+t6 := n
+IF t5 <= t6 GOTO label2
+GOTO label3
+LABEL label2 :
+t10 := i
+t8 := &people
+t11 := #0
+t11 := t11 * #100
+t7 := t11 + t10
+t9 := #1
+t7 := t7 * #4
+t7 := t7 + t8
+*t7 := t9
+t13 := i
+t14 := #1
+t12 := t13 + t14
+i := t12
+GOTO label1
+LABEL label3 :
+t15 := #1
+i := t15
+LABEL label4 :
+t16 := i
+t17 := n
+IF t16 <= t17 GOTO label5
+GOTO label6
+LABEL label5 :
+t20 := i
+t22 := &people
+t21 := #0
+t21 := t21 * #100
+t21 := t21 + t20
+t21 := t21 * #4
+t21 := t21 + t22
+t18 := *t21
+t19 := #1
+IF t18 == t19 GOTO label7
+GOTO label8
+LABEL label7 :
+t24 := j
+t26 := i
+t28 := &people
+t27 := #0
+t27 := t27 * #100
+t27 := t27 + t26
+t27 := t27 * #4
+t27 := t27 + t28
+t25 := *t27
+t23 := t24 + t25
+j := t23
+t29 := j
+t30 := m
+IF t29 == t30 GOTO label9
+GOTO label10
+LABEL label9 :
+t32 := &i
+t31 := i
+WRITE t31
+t33 := #0
+j := t33
+t37 := i
+t35 := &people
+t38 := #0
+t38 := t38 * #100
+t34 := t38 + t37
+t36 := #0
+t34 := t34 * #4
+t34 := t34 + t35
+*t34 := t36
+t40 := k
+t41 := #1
+t39 := t40 + t41
+k := t39
+LABEL label10 :
+t42 := k
+t43 := n
+IF t42 == t43 GOTO label11
+GOTO label12
+LABEL label11 :
+t44 := i
+num := t44
+t45 := #0
+RETURN t45
+LABEL label12 :
+LABEL label8 :
+t46 := i
+t47 := n
+IF t46 == t47 GOTO label13
+GOTO label14
+LABEL label13 :
+t48 := #0
+i := t48
+LABEL label14 :
+t50 := i
+t51 := #1
+t49 := t50 + t51
+i := t49
+GOTO label4
+LABEL label6 :
+t52 := #0
+RETURN t52
+
+FUNCTION main :
+READ t53
+a := t53
+READ t54
+b := t54
+t56 := &a
+t55 := a
+t58 := &b
+t57 := b
+ARG t57
+ARG t55
+t0 := CALL Josepy
+t59 := #0
+RETURN t59

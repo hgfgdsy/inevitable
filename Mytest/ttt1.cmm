@@ -1,0 +1,19 @@
+struct ss
+{
+	int y;
+	int b[10];
+	struct{
+	float v;
+	} x;	
+};
+
+struct fs
+{
+	float v;
+	int z;
+	int v[10];
+	struct{
+	float z;
+	} d;	
+};
+

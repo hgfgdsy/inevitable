@@ -1,0 +1,18 @@
+/*
+* @code
+*/
+
+/*
+* @param int a
+*/
+
+int func(int a)
+{
+	int a, b;
+	/*
+	   definition 12345
+	 */
+
+	a = a + b /* - c *;
+}//
+

@@ -1,0 +1,12 @@
+int main()
+{
+	// int a = 12;
+	float b = 12.34;
+
+	/*
+		int c = 32;
+		/*
+	*/
+	float d = 12.45;
+}
+

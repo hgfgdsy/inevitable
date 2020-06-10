@@ -1,0 +1,34 @@
+struct s
+{
+	int a[10];
+	int b;
+	int c[10];
+};
+
+int main()
+{
+	struct s d;
+	int i;
+	i=0;
+	while (i<10)
+	{
+		d.a[i]=i;
+		d.c[i]=10-i;
+		i=i+1;
+	}
+	d.b=100;
+	i=0;
+	while (i<10)
+	{
+		write(d.a[i]);
+		i=i+1;
+	}
+	write(d.b);
+	i=0;
+	while (i<10)
+	{
+		write(d.c[i]);
+		i=i+1;
+	}
+	return 0;
+}

@@ -1,0 +1,38 @@
+int x, y;
+int as[500];
+struct tmp
+{
+	int a,b;
+	float y[10][12][100];
+};
+struct tmp2
+{
+	struct ll
+	{
+		int tt;
+	} y;
+};
+
+struct tmp b[10];
+
+//int f(int z, int l);
+//int f();
+int f(int z, int l)
+{
+	return 0;
+}
+
+struct tmp vvvv(float x, struct tmp2 y)
+{
+	return 0;
+}
+
+struct tmp v5(int z);
+
+//float x;
+
+int main()
+{
+	int x, x;
+	return 0;
+}
